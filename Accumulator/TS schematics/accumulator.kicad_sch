@@ -1,0 +1,88 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid aec77b52-01ca-489b-a892-67e0a99e1530)
+
+  (paper "A4")
+
+  (title_block
+    (title "Tractive System")
+    (date "2024-02-29")
+    (rev "0")
+    (company "BYU-Idaho Viking Racing")
+  )
+
+  (lib_symbols
+  )
+
+
+  (rectangle (start 109.22 60.96) (end 133.35 76.2)
+    (stroke (width 0) (type default) (color 0 0 0 1))
+    (fill (type none))
+    (uuid 77a9739e-9c46-4a6c-803d-dd28c0caa594)
+  )
+
+  (text "  Inverter\nDTI HV-550" (at 115.57 69.85 0)
+    (effects (font (size 1.27 1.27) (color 0 0 0 1)) (justify left bottom))
+    (uuid 4e8d4ca9-7a80-429e-a713-16eb89f28769)
+  )
+
+  (sheet (at 44.45 60.96) (size 19.05 15.24) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 9471d31a-e2e1-43e8-afa8-7ad6f45c5081)
+    (property "Sheetname" "Battery Cells" (at 44.45 60.2484 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "BatteryCells.kicad_sch" (at 44.45 76.7846 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (property "Field2" "" (at 44.45 60.96 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "Vout-" input (at 63.5 72.39 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid 78f9570c-9e4e-4113-aa2e-ba1bb5c5e07a)
+    )
+    (pin "Vout+" input (at 63.5 66.04 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid 182e1142-efe3-4e35-9fb9-8f6a0ae0ee7d)
+    )
+    (instances
+      (project "accumulator"
+        (path "/aec77b52-01ca-489b-a892-67e0a99e1530" (page "2"))
+      )
+    )
+  )
+
+  (sheet (at 256.54 19.05) (size 19.05 15.24) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid d59b550c-dacf-4de5-bfc4-fa95ac4ad41c)
+    (property "Sheetname" "Battery Cells With Thermistors" (at 256.54 18.3384 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "BatteryCellsWithThermistors.kicad_sch" (at 256.54 34.8746 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (property "Field2" "" (at 256.54 19.05 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "Vout-" input (at 275.59 30.48 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid 5a2c2fe5-04cc-4306-ae36-e541c67abca5)
+    )
+    (pin "Vout+" input (at 275.59 24.13 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid 045f62e7-18b9-49d4-9bf8-1ebaec4737da)
+    )
+    (instances
+      (project "accumulator"
+        (path "/aec77b52-01ca-489b-a892-67e0a99e1530" (page "3"))
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)
